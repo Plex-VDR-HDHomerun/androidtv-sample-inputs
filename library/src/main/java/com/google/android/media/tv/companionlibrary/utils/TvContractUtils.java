@@ -66,12 +66,12 @@ public class TvContractUtils {
         VIDEO_HEIGHT_TO_FORMAT_MAP.put(4320, Channels.VIDEO_FORMAT_4320P);
     }
 
-    private TvContractUtil() {}
+    private TvContractUtils() {}
 
     public static void updateChannels(
             Context context, String inputId, List<XmlTvParser.XmlTvChannel> channels) {
         // Create a map from original network ID to channel row ID for existing channels.
-        SparseArray<Long> mExistingChannelsMap = new SparseArray<>();
+        SparseArray<Long> channelMap = new SparseArray<>();
         Uri channelsUri = TvContract.buildChannelsUriForInput(inputId);
         String[] projection = {Channels._ID, Channels.COLUMN_ORIGINAL_NETWORK_ID};
         Cursor cursor = null;
@@ -81,7 +81,7 @@ public class TvContractUtils {
             while (cursor != null && cursor.moveToNext()) {
                 long rowId = cursor.getLong(0);
                 int originalNetworkId = cursor.getInt(1);
-                mExistingChannelsMap.put(originalNetworkId, rowId);
+                channelMap.put(originalNetworkId, rowId);
             }
         } finally {
             if (cursor != null) {
@@ -100,14 +100,14 @@ public class TvContractUtils {
             values.put(Channels.COLUMN_TRANSPORT_STREAM_ID, channel.transportStreamId);
             values.put(Channels.COLUMN_SERVICE_ID, channel.serviceId);
             values.put(Channels.COLUMN_INTERNAL_PROVIDER_DATA, channel.url);
-            Long rowId = mExistingChannelsMap.get(channel.originalNetworkId);
+            Long rowId = channelMap.get(channel.originalNetworkId);
             Uri uri;
             if (rowId == null) {
                 uri = resolver.insert(Channels.CONTENT_URI, values);
             } else {
                 uri = TvContract.buildChannelUri(rowId);
                 resolver.update(uri, values, null, null);
-                mExistingChannelsMap.remove(channel.originalNetworkId);
+                channelMap.remove(channel.originalNetworkId);
             }
             if (!TextUtils.isEmpty(channel.icon.src)) {
                 logos.put(TvContract.buildChannelLogoUri(uri), channel.icon.src);
@@ -118,9 +118,9 @@ public class TvContractUtils {
         }
 
         // Deletes channels which don't exist in the new feed.
-        int size = mExistingChannelsMap.size();
+        int size = channelMap.size();
         for (int i = 0; i < size; i++) {
-            Long rowId = mExistingChannelsMap.valueAt(i);
+            Long rowId = channelMap.valueAt(i);
             resolver.delete(TvContract.buildChannelUri(rowId), null, null);
         }
     }

@@ -121,7 +121,7 @@ public class IptvUtil {
                 }
 
                 if (originalNetworkId != 0 && displayName != null) {
-                    XmlTvParser.Channel channel =
+                    XmlTvParser.XmlTvChannel channel =
                             new XmlTvParser.XmlTvChannel(id, displayName, displayNumber, icon,
                                     originalNetworkId, 0, 0, false);
                     if (channelMap.containsKey(originalNetworkId)) {
