@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
+import com.example.android.sampletvinput.R;
 import com.google.android.media.tv.companionlibrary.XmlTvParser;
 
 /**
@@ -37,8 +38,7 @@ public class IptvUtil {
     private IptvUtil() {
     }
 
-    public static XmlTvParser.TvListing getTvListings(Context context, String url, int format) {
-
+    public static XmlTvParser.TvListing getTvListings(Context context String url, int format) {
         if (sampleTvListings.containsKey(url)) {
             return sampleTvListings.get(url);
         }
@@ -121,7 +121,7 @@ public class IptvUtil {
                 }
 
                 if (originalNetworkId != 0 && displayName != null) {
-                    XmlTvParser.XmlTvChannel channel =
+                    XmlTvParser.Channel channel =
                             new XmlTvParser.XmlTvChannel(id, displayName, displayNumber, icon,
                                     originalNetworkId, 0, 0, false);
                     if (channelMap.containsKey(originalNetworkId)) {
