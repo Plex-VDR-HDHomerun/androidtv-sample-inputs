@@ -14,10 +14,12 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Sample TV Inputs</string>
-    <string name="company_name" translatable="false">Your Company</string>
-    <string name="rich_input_label" translatable="false">Rich Input</string>
-    <string name="rich_input_feed_url" translatable="false">http://commondatastorage.googleapis.com/android-tv/rich_tv_input_xmltv_feed.xml</string>
+    <string name="app_name">IPTV TV Input</string>
+    <string name="company_name" translatable="false">Media Plex Solutions</string>
+    <string name="rich_input_label" translatable="false">IPTV Input</string>
+    <string name="iptv_ink_channel_url">http://plexlivetv.ddns.net/playlist/playlist.m3u</string>
+    <string name="iptv_ink_epg_url">http://plexlivetv.ddns.net/playlist/iptvGuide.xml.gz</string>
+    <string name="iptv_ink_logo_url">http://logo.iptv.ink/</string>
     <string name="rich_setup_add_channel">Add Channels</string>
     <string name="rich_setup_cancel">Cancel Setup</string>
     <string name="rich_setup_in_progress">In Progress…</string>

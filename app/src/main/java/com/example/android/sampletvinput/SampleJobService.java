@@ -18,8 +18,6 @@ package com.example.android.sampletvinput;
 import android.media.tv.TvContract;
 import android.net.Uri;
 
-import com.example.android.sampletvinput.rich.RichFeedUtil;
-
 import com.google.android.exoplayer.util.Util;
 import com.google.android.media.tv.companionlibrary.model.Advertisement;
 import com.google.android.media.tv.companionlibrary.model.Channel;
@@ -30,6 +28,8 @@ import com.google.android.media.tv.companionlibrary.XmlTvParser;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.android.sampletvinput.rich.IptvUtil;
 
 /**
  * EpgSyncJobService that periodically runs to update channels and programs.
@@ -70,8 +70,15 @@ public class SampleJobService extends EpgSyncJobService {
     @Override
     public List<Channel> getChannels() {
         // Add channels through an XMLTV file
-        XmlTvParser.TvListing listings = RichFeedUtil.getRichTvListings(this);
+        XmlTvParser.TvListing listings = IptvUtil.getTvListings(this);
         List<Channel> channelList = new ArrayList<>(listings.getChannels());
+
+        XmlTvParser.TvListing listings = IptvUtil.getTvListings(mContext,
+                this.getString(R.string.iptv_ink_epg_url), IptvUtil.FORMAT_XMLTV);
+
+        XmlTvParser.TvListing channelListings = IptvUtil.getTvListings(this);
+                context.getString(R.string.iptv_ink_channel_url), IptvUtil.FORMAT_M3U);
+        listings.setChannels(channelListings.channels);
 
         // Build advertisement list for the channel.
         Advertisement channelAd = new Advertisement.Builder()
@@ -101,7 +108,7 @@ public class SampleJobService extends EpgSyncJobService {
             long endMs) {
         if (!channel.getDisplayName().equals(MPEG_DASH_CHANNEL_NAME)) {
             // Is an XMLTV Channel
-            XmlTvParser.TvListing listings = RichFeedUtil.getRichTvListings(getApplicationContext());
+            XmlTvParser.TvListing listings = IptvUtil.getTvListings(getApplicationContext());
             return listings.getPrograms(channel);
         } else {
             // Build Advertisement list for the program.
