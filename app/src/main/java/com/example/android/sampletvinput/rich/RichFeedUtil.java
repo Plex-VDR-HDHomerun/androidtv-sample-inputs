@@ -43,7 +43,7 @@ public class RichFeedUtil {
 
     // For this sample we will use the local XML TV feed. In your real app, you will want to use a
     // remote feed to provide your users with up to date channel listings.
-    private static final boolean USE_LOCAL_XML_FEED = true;
+    private static final boolean USE_LOCAL_XML_FEED = false;
 
     private static final int URLCONNECTION_CONNECTION_TIMEOUT_MS = 3000;  // 3 sec
     private static final int URLCONNECTION_READ_TIMEOUT_MS = 10000;  // 10 sec
