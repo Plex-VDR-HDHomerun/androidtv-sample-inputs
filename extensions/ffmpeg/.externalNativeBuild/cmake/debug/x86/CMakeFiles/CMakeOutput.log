@@ -29,17 +29,17 @@ The CXX compiler identification is GNU, found in "C:/Users/Z400/Desktop/androidt
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_d29fe"
-[1/2] Building C object CMakeFiles/cmTC_d29fe.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_d29fe
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ececd"
+[1/2] Building C object CMakeFiles/cmTC_ececd.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_ececd
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_f7bb8"
-[1/2] Building C object CMakeFiles/cmTC_f7bb8.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_f7bb8
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_abd3f"
+[1/2] Building C object CMakeFiles/cmTC_abd3f.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_abd3f
 Using built-in specs.
 COLLECT_GCC=C:\AndroidSDK\ndk-bundle\toolchains\x86-4.9\prebuilt\windows-x86_64\bin\i686-linux-android-gcc.exe
 COLLECT_LTO_WRAPPER=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe
@@ -49,17 +49,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/
 LIBRARY_PATH=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/;C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_f7bb8' '-mtune=intel' '-march=i686'
- C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\cc01kfA9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_f7bb8 C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_f7bb8.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_abd3f' '-mtune=intel' '-march=i686'
+ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\ccLMRHmv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_abd3f C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_abd3f.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_f7bb8"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_f7bb8.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_f7bb8]
+  ignore line: [Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_abd3f"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_abd3f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_abd3f]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\AndroidSDK\ndk-bundle\toolchains\x86-4.9\prebuilt\windows-x86_64\bin\i686-linux-android-gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe]
@@ -74,13 +74,13 @@ Parsed C implicit link information from above output:
   ignore line: [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/]
   ignore line: [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/]
   ignore line: [C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_f7bb8' '-mtune=intel' '-march=i686']
-  link line: [ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\cc01kfA9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_f7bb8 C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_f7bb8.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_abd3f' '-mtune=intel' '-march=i686']
+  link line: [ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\ccLMRHmv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_abd3f C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_abd3f.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
     arg [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:UsersZ400AppDataLocalTempcc01kfA9.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:UsersZ400AppDataLocalTempccLMRHmv.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -96,7 +96,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f7bb8] ==> ignore
+    arg [cmTC_abd3f] ==> ignore
     arg [C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x]
     arg [-LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc] ==> dir [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc]
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_f7bb8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_abd3f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-ldl] ==> lib [dl]
@@ -137,9 +137,9 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_f9b2e"
-[1/2] Building C object CMakeFiles/cmTC_f9b2e.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_f9b2e
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_502e6"
+[1/2] Building C object CMakeFiles/cmTC_502e6.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_502e6
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -151,9 +151,9 @@ Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_f9b2e"
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_00f2a"
-[1/2] Building C object CMakeFiles/cmTC_00f2a.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_00f2a
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_3b43d"
+[1/2] Building C object CMakeFiles/cmTC_3b43d.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_3b43d
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -165,9 +165,9 @@ Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_00f2a"
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_22187"
-[1/2] Building C object CMakeFiles/cmTC_22187.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_22187
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_aee0c"
+[1/2] Building C object CMakeFiles/cmTC_aee0c.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_aee0c
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,17 +177,17 @@ Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_22187"
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_87858"
-[1/2] Building CXX object CMakeFiles/cmTC_87858.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_87858
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_649c7"
+[1/2] Building CXX object CMakeFiles/cmTC_649c7.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_649c7
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ce396"
-[1/2] Building CXX object CMakeFiles/cmTC_ce396.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_ce396
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_be2aa"
+[1/2] Building CXX object CMakeFiles/cmTC_be2aa.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_be2aa
 Using built-in specs.
 COLLECT_GCC=C:\AndroidSDK\ndk-bundle\toolchains\x86-4.9\prebuilt\windows-x86_64\bin\i686-linux-android-g++.exe
 COLLECT_LTO_WRAPPER=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe
@@ -197,17 +197,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/
 LIBRARY_PATH=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/;C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/;C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_ce396' '-mtune=intel' '-march=i686'
- C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\cc4tsyAN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_ce396 C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ce396.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_be2aa' '-mtune=intel' '-march=i686'
+ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\ccOwg3Af.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_be2aa C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_be2aa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ce396"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_ce396.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_ce396]
+  ignore line: [Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_be2aa"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_be2aa.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_be2aa]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\AndroidSDK\ndk-bundle\toolchains\x86-4.9\prebuilt\windows-x86_64\bin\i686-linux-android-g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe]
@@ -222,13 +222,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/]
   ignore line: [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/]
   ignore line: [C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_ce396' '-mtune=intel' '-march=i686']
-  link line: [ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\cc4tsyAN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_ce396 C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ce396.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_be2aa' '-mtune=intel' '-march=i686']
+  link line: [ C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe -plugin C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll -plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Z400\AppData\Local\Temp\ccOwg3Af.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_be2aa C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc -LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_be2aa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
     arg [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:UsersZ400AppDataLocalTempcc4tsyAN.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:UsersZ400AppDataLocalTempccOwg3Af.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -244,7 +244,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_ce396] ==> ignore
+    arg [cmTC_be2aa] ==> ignore
     arg [C:/AndroidSDK/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x]
     arg [-LC:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc] ==> dir [C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/../lib/gcc]
@@ -263,7 +263,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_ce396.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_be2aa.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -287,9 +287,9 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_5dcda"
-[1/2] Building CXX object CMakeFiles/cmTC_5dcda.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_5dcda
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_c004b"
+[1/2] Building CXX object CMakeFiles/cmTC_c004b.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_c004b
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -354,9 +354,9 @@ Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_5dcda"
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_bcc8a"
-[1/2] Building CXX object CMakeFiles/cmTC_bcc8a.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_bcc8a
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_954ef"
+[1/2] Building CXX object CMakeFiles/cmTC_954ef.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_954ef
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -421,9 +421,9 @@ Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_bcc8a"
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/extensions/ffmpeg/.externalNativeBuild/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_b47c4"
-[1/2] Building CXX object CMakeFiles/cmTC_b47c4.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_b47c4
+Run Build Command:"C:\AndroidSDK\cmake\3.6.4111459\bin\ninja.exe" "cmTC_042ca"
+[1/2] Building CXX object CMakeFiles/cmTC_042ca.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_042ca
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

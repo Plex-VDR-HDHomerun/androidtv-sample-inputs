@@ -24,269 +24,413 @@ import android.view.Surface;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.Renderer;
+import com.google.android.exoplayer2.PlaybackParameters;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.Timeline;
+import com.google.android.exoplayer2.audio.AudioCapabilities;
 import com.google.android.exoplayer2.audio.AudioRendererEventListener;
 import com.google.android.exoplayer2.decoder.DecoderCounters;
+import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
+import com.google.android.exoplayer2.upstream.DefaultAllocator;
+import com.google.android.exoplayer2.util.MimeTypes;
+import com.google.android.exoplayer2.video.VideoRendererEventListener;
+
+
+import com.example.android.sampletvinput.player.extractor.RoboTvExtractor;
+import com.example.android.sampletvinput.player.source.PositionReference;
+import com.example.android.sampletvinput.player.utils.TrickPlayController;
 import com.google.android.media.tv.companionlibrary.TvPlayer;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class LeanbackPlayer implements
-        SimpleExoPlayer.VideoListener,
-        ExoPlayer.EventListener,
-        AudioRendererEventListener,
-        TvPlayer {
-    private static final int STATE_IDLE = ExoPlayer.STATE_IDLE;
-    private static final int STATE_PREPARING = ExoPlayer.STATE_BUFFERING;
-    private static final int RENDERER_BUILDING_STATE_IDLE = 1;
-    private static final int RENDERER_BUILDING_STATE_BUILDING = 2;
-    private static final int RENDERER_BUILDING_STATE_BUILT = 3;
+public class LeanbackPlayer implements com.google.android.exoplayer2.Player.EventListener, RoboTvExtractor.Listener, AudioRendererEventListener, VideoRendererEventListener {
 
-    private final RendererBuilder rendererBuilder;
-    private final SimpleExoPlayer player;
-    private final Handler mainHandler;
-    private final CopyOnWriteArrayList<Listener> listeners;
-    private final List<Callback> mTvPlayerCallbacks;
+    private static final String TAG = "LeanbackPlayer";
 
-    private int rendererBuildingState;
-    private int lastReportedPlaybackState;
-    private boolean lastReportedPlayWhenReady;
+    private static final int DEFAULT_MIN_BUFFER_MS = 3000;
+    private static final int DEFAULT_MAX_BUFFER_MS = 5000;
+    private static final int DEFAULT_BUFFER_FOR_PLAYBACK_MS = 1000;
+    private static final int DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS = 2000;
 
-    private Renderer mAudioRenderer;
+    public interface Listener  {
 
-    /* package */ interface RendererBuilder {
-        void buildRenderers(LeanbackPlayer player);
+        void onPlayerStateChanged(boolean playWhenReady, int playbackState);
 
-        void cancel();
+        void onPlayerError(Exception e);
+
+        void onDisconnect();
+
+        void onTracksChanged(StreamBundle bundle);
+
+        void onAudioTrackChanged(Format format);
+
+        void onVideoTrackChanged(Format format);
+
+        void onRenderedFirstFrame();
+
+        void onStreamError(int status);
     }
 
-    public interface Listener {
-        void onStateChanged(boolean playWhenReady, int playbackState);
+    private Listener listener;
+    private Handler handler;
+
+    final private SimpleExoPlayer player;
+    final private RoboTvDataSourceFactory dataSourceFactory;
+    final private RoboTvExtractor.Factory extractorFactory;
+    final private PositionReference position;
+    final private TrickPlayController trickPlayController;
+    final private ConditionVariable openConditionVariable;
+    final private String server;
+
+    static public Uri createLiveUri(int channelUid) {
+        return Uri.parse("robotv://livetv/" + channelUid);
     }
 
-    public LeanbackPlayer(RendererBuilder rendererBuilder, Context context) {
-        this.rendererBuilder = rendererBuilder;
-        player = ExoPlayerFactory.newSimpleInstance
-                (context, new DefaultTrackSelector(), new DefaultLoadControl());
-        player.setVideoListener(this);
-        player.addListener(this);
-        mainHandler = new Handler();
-        listeners = new CopyOnWriteArrayList<>();
-        mTvPlayerCallbacks = new CopyOnWriteArrayList<>();
-        lastReportedPlaybackState = STATE_IDLE;
-        rendererBuildingState = RENDERER_BUILDING_STATE_IDLE;
+    static public Uri createRecordingUri(String recordingId, long position) {
+        return Uri.parse("robotv://recording/" + recordingId + "?position=" + position);
     }
 
-    public void addListener(Listener listener) {
-        listeners.add(listener);
-    }
+    public Player(Context context, String server, String language, Listener listener, boolean audioPassthrough, boolean videlTunneledPlayback) throws IOException {
+        AudioCapabilities audioCapabilities = AudioCapabilities.getCapabilities(context);
 
-    public void removeListener(Listener listener) {
-        listeners.remove(listener);
-    }
+        this.listener = listener;
+        this.server = server;
+        boolean passthrough = audioCapabilities.supportsEncoding(AudioFormat.ENCODING_AC3) && audioPassthrough;
 
-    public void prepare() {
-        if (rendererBuildingState == RENDERER_BUILDING_STATE_BUILT) {
-            player.stop();
+        Log.i(TAG, "audio passthrough: " + (passthrough ? "enabled" : "disabled"));
+
+        openConditionVariable = new ConditionVariable();
+        handler = new Handler();
+
+        position = new PositionReference();
+
+        DefaultTrackSelector trackSelector = new DefaultTrackSelector();
+        trackSelector.setParameters(new DefaultTrackSelector.Parameters().withPreferredAudioLanguage(language));
+
+        if(videlTunneledPlayback) {
+            trackSelector.setTunnelingAudioSessionId(C.generateAudioSessionIdV21(context));
         }
-        rendererBuilder.cancel();
-        rendererBuildingState = RENDERER_BUILDING_STATE_BUILDING;
-        maybeReportPlayerState();
-        rendererBuilder.buildRenderers(this);
-    }
 
-    /* package */ void onRenderers(Renderer audioRenderer, MediaSource mMediaSource) {
-        this.mAudioRenderer = audioRenderer;
-        player.prepare(mMediaSource);
-        rendererBuildingState = RENDERER_BUILDING_STATE_BUILT;
-    }
+        player = ExoPlayerFactory.newSimpleInstance(
+                new RoboTvRenderersFactory(context, audioPassthrough),
+                trackSelector,
+                new DefaultLoadControl(
+                        new DefaultAllocator(true, C.DEFAULT_BUFFER_SEGMENT_SIZE),
+                        DEFAULT_MIN_BUFFER_MS,
+                        DEFAULT_MAX_BUFFER_MS,
+                        DEFAULT_BUFFER_FOR_PLAYBACK_MS,
+                        DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS,
+                        C.LENGTH_UNSET,
+                        false
+                )
+        );
 
-    public void setPlayWhenReady(boolean playWhenReady) {
-        player.setPlayWhenReady(playWhenReady);
-    }
+        player.addListener(this);
+        player.setVideoDebugListener(this);
 
-    public void seekTo(long positionMs) {
-        player.seekTo(positionMs);
+        dataSourceFactory = new RoboTvDataSourceFactory(position, language, this);
+        extractorFactory = new RoboTvExtractor.Factory(position, this, language, passthrough);
+        trickPlayController = new TrickPlayController(handler, position, player);
     }
 
     public void release() {
-        rendererBuilder.cancel();
-        rendererBuildingState = RENDERER_BUILDING_STATE_IDLE;
+        stop();
+
+        handler = null;
+
+        player.removeListener(this);
         player.release();
+
+        dataSourceFactory.release();
     }
 
-    private int getPlaybackState() {
-        if (rendererBuildingState == RENDERER_BUILDING_STATE_BUILDING) {
-            return STATE_PREPARING;
-        }
-        int playerState = player.getPlaybackState();
-        if (rendererBuildingState == RENDERER_BUILDING_STATE_BUILT && playerState == STATE_IDLE) {
-            return STATE_PREPARING;
-        }
-        return playerState;
-    }
-
-    /* package */ Handler getMainHandler() {
-        return mainHandler;
-    }
-
-    /**
-     * Implement TvPlayer interface
-     */
-    @Override
-    public void setVolume(float volume) {
-        ExoPlayer.ExoPlayerMessage m = new ExoPlayer.ExoPlayerMessage(mAudioRenderer, C.MSG_SET_VOLUME, volume);
-        player.sendMessages(m);
-    }
-
-    @Override
     public void setSurface(Surface surface) {
         player.setVideoSurface(surface);
     }
 
-    @Override
-    public void registerCallback(Callback callback) {
-        mTvPlayerCallbacks.add(callback);
+    public void setStreamVolume(float volume) {
+        player.setVolume(volume);
     }
 
-    @Override
-    public void unregisterCallback(Callback callback) {
-        mTvPlayerCallbacks.remove(callback);
-    }
-
-    @Override
-    public void setPlaybackParams(PlaybackParams params) {
-    }
-
-    @Override
-    public long getCurrentPosition() {
-        return player.getCurrentPosition();
-    }
-
-    @Override
-    public long getDuration() {
-        return player.getDuration();
-    }
-
-    @Override
-    public void pause() {
-        player.setPlayWhenReady(false);
-    }
-
-    @Override
     public void play() {
+        trickPlayController.stop();
         player.setPlayWhenReady(true);
     }
 
+    public void pause() {
+        trickPlayController.stop();
+        player.setPlayWhenReady(false);
+    }
+
+    public boolean isPaused() {
+        return !player.getPlayWhenReady();
+    }
+
     public void stop() {
+        trickPlayController.reset();
         player.stop();
+        position.reset();
     }
 
-    /**
-     * Implement Exoplayer.EventListener interface
-     */
-    @Override
-    public void onTimelineChanged(Timeline timeline, Object manifest) {
-        // Do nothing.
+    public void open(Uri uri) {
+        stop();
+
+        try {
+            dataSourceFactory.connect(server);
+        }
+        catch (IOException e) {
+            if(listener != null) {
+                listener.onStreamError(Connection.STATUS_NORESPONSE);
+            }
+
+            e.printStackTrace();
+            return;
+        }
+
+        MediaSource source = new ExtractorMediaSource(
+                uri,
+                dataSourceFactory,
+                extractorFactory,
+                handler, null
+        );
+
+        player.prepare(source);
     }
 
-    @Override
-    public void onTracksChanged(TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
-        // Do nothing.
+    public void openSync(Uri uri) {
+        Log.d(TAG, "open sync: " + uri.toString());
+        openConditionVariable.close();
+
+        open(uri);
+
+        openConditionVariable.block(5000);
+        Log.d(TAG, "open sync - done");
+    }
+
+    public void selectAudioTrack(String trackId) {
+        extractorFactory.selectAudioTrack(trackId);
+    }
+
+    public long getStartPosition() {
+        return position.getStartPosition();
+    }
+
+    public long getEndPosition() {
+        return position.getEndPosition();
+    }
+
+    public long getCurrentPosition() {
+        long timeUs = player.getCurrentPosition() * 1000;
+        long startPos = position.getStartPosition();
+        long endPos = position.getEndPosition();
+
+        long pos = Math.max(position.positionFromTimeUs(timeUs), startPos);
+
+        // clamp to end position (if we already have a valid endposition)
+        if(endPos > startPos) {
+            return Math.min(pos, endPos);
+        }
+
+        return pos;
+    }
+
+    public long getBufferedPosition() {
+        long timeUs = player.getBufferedPosition() * 1000;
+        return position.positionFromTimeUs(timeUs);
+    }
+
+    public long getDurationSinceStart() {
+        return getCurrentPosition() - getStartPosition();
+    }
+
+    public long getDuration() {
+        return position.getDuration();
+    }
+
+    public int getPlaybackState() {
+        return player.getPlaybackState();
+    }
+
+    public void seek(long position) {
+        long p = this.position.timeUsFromPosition(Math.max(position, this.position.getStartPosition()));
+        player.seekTo(p / 1000);
+    }
+
+    @TargetApi(23)
+    public void setPlaybackParams(PlaybackParams params) {
+        Log.d(TAG, "speed: " + params.getSpeed());
+        trickPlayController.start(params.getSpeed());
+    }
+
+    public Connection getConnection() {
+        return dataSourceFactory.getConnection();
     }
 
     @Override
     public void onLoadingChanged(boolean isLoading) {
-        // Do nothing.
+    }
+
+    @Override
+    public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
+        Log.i(TAG, "onPlayerStateChanged " + playWhenReady + " " + playbackState);
+        listener.onPlayerStateChanged(playWhenReady, playbackState);
+    }
+
+    @Override
+    public void onRepeatModeChanged(int repeatMode) {
+    }
+
+    @Override
+    public void onShuffleModeEnabledChanged(boolean shuffleModeEnabled) {
+    }
+
+    @Override
+    public void onTimelineChanged(Timeline timeline, Object manifest) {
     }
 
     @Override
     public void onPlayerError(ExoPlaybackException error) {
-        // Do nothing.
+        listener.onPlayerError(error);
     }
 
     @Override
-    public void onPositionDiscontinuity() {
-        // Do nothing.
+    public void onPositionDiscontinuity(int reason) {
     }
 
     @Override
-    public void onPlayerStateChanged(boolean playWhenReady, int state) {
-        for (Callback tvCallback : mTvPlayerCallbacks) {
-            if (playWhenReady && state == ExoPlayer.STATE_ENDED) {
-                tvCallback.onCompleted();
-            } else if (playWhenReady && state == ExoPlayer.STATE_READY) {
-                tvCallback.onStarted();
-            }
-        }
-        maybeReportPlayerState();
+    public void onTracksChanged(StreamBundle bundle) {
+        listener.onTracksChanged(bundle);
     }
 
-    private void maybeReportPlayerState() {
-        boolean playWhenReady = player.getPlayWhenReady();
-        int playbackState = getPlaybackState();
-        if (lastReportedPlayWhenReady != playWhenReady ||
-                lastReportedPlaybackState != playbackState) {
-            for (Listener listener : listeners) {
-                listener.onStateChanged(playWhenReady, playbackState);
+    @Override
+    public void onAudioTrackChanged(Format format) {
+        if(format == null) {
+            return;
+        }
+        listener.onAudioTrackChanged(format);
+    }
+
+    @Override
+    public void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
+    }
+
+    @Override
+    public void onSeekProcessed() {
+
+    }
+
+    @Override
+    public void onVideoEnabled(DecoderCounters counters) {
+    }
+
+    @Override
+    public void onVideoDecoderInitialized(String decoderName, long initializedTimestampMs, long initializationDurationMs) {
+    }
+
+    @Override
+    public void onVideoInputFormatChanged(Format format) {
+
+    }
+
+    @Override
+    public void onDroppedFrames(int count, long elapsedMs) {
+    }
+
+    @Override
+    public void onVideoSizeChanged(int width, int height, int unappliedRotationDegrees, float pixelWidthHeightRatio) {
+    }
+
+    @Override
+    public void onRenderedFirstFrame(Surface surface) {
+        if(trickPlayController.activated()) {
+            trickPlayController.postTick();
+            return;
+        }
+
+        listener.onRenderedFirstFrame();
+    }
+
+    @Override
+    public void onVideoDisabled(DecoderCounters counters) {
+    }
+
+    @Override
+    public void onDisconnect() {
+        listener.onDisconnect();
+    }
+
+    @Override
+    public void onTracksChanged(TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
+        if(listener == null) {
+            return;
+        }
+
+        for(int i = 0; i < trackSelectionArray.length; i++) {
+            TrackSelection selection = trackSelectionArray.get(i);
+
+            // skip disabled renderers
+            if(selection == null) {
+                continue;
             }
-            lastReportedPlayWhenReady = playWhenReady;
-            lastReportedPlaybackState = playbackState;
+
+            Format format = selection.getSelectedFormat();
+
+            // selected audio track
+            if(MimeTypes.isAudio(format.sampleMimeType)) {
+                listener.onAudioTrackChanged(format);
+            }
+
+            // selected video track
+            if(MimeTypes.isVideo(format.sampleMimeType)) {
+                listener.onVideoTrackChanged(format);
+            }
         }
     }
 
-    /**
-     * Implement AudioRendererEventListener
-     */
+    @Override
+    public void onStreamError(int status) {
+        if(listener != null) {
+            listener.onStreamError(status);
+        }
+    }
+
+    @Override
+    public void onServerTuned(int status) {
+        openConditionVariable.open();
+    }
+
     @Override
     public void onAudioEnabled(DecoderCounters counters) {
-        // Do nothing.
     }
 
     @Override
     public void onAudioSessionId(int audioSessionId) {
-        // Do nothing.
-
     }
 
     @Override
     public void onAudioDecoderInitialized(String decoderName, long initializedTimestampMs, long initializationDurationMs) {
-        // Do nothing.
     }
 
     @Override
     public void onAudioInputFormatChanged(Format format) {
-        // Do nothing.
+        //listener.onAudioTrackChanged(format);
     }
 
     @Override
-    public void onAudioTrackUnderrun(int bufferSize, long bufferSizeMs, long elapsedSinceLastFeedMs) {
-        // Do nothing.
+    public void onAudioSinkUnderrun(int bufferSize, long bufferSizeMs, long elapsedSinceLastFeedMs) {
+
     }
 
     @Override
     public void onAudioDisabled(DecoderCounters counters) {
-        // Do nothing.
     }
 
-
-    @Override
-    public void onVideoSizeChanged(int width, int height, int unappliedRotationDegrees, float pixelWidthHeightRatio) {
-        // Do nothing.
-    }
-
-    @Override
-    public void onRenderedFirstFrame() {
-        // Do nothing.
-    }
 }

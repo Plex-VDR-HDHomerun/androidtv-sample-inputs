@@ -1,0 +1,97 @@
+
+{
+	"buildFiles" : 
+	[
+		"C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/CMakeLists.txt",
+		"C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/CMakeLists.txt",
+		"C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/jniwrap/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\AndroidSDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"msgexchange-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "msgexchange",
+			"buildCommand" : "C:\\AndroidSDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\.externalNativeBuild\\cmake\\debug\\x86 --target msgexchange",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgcondition.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgconnection.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgpacket.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgsession.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgthread.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/msgthreadqueue.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				},
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/msgexchange/src/os-config.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				}
+			],
+			"output" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange.so",
+			"toolchain" : "1282776189"
+		},
+		"msgexchange_jni-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "msgexchange_jni",
+			"buildCommand" : "C:\\AndroidSDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\.externalNativeBuild\\cmake\\debug\\x86 --target msgexchange_jni",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --sysroot=C:/AndroidSDK/ndk-bundle/sysroot  -Dmsgexchange_jni_EXPORTS -IC:\\Users\\Z400\\Desktop\\androidtv-sample-inputs-master\\msgexchange\\src\\main\\cpp\\msgexchange\\.\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\AndroidSDK\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem C:/AndroidSDK/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O3 -fomit-frame-pointer -ffunction-sections -fdata-sections -DHAVE_ZLIB=1 -std=c++11 -pthread -frtti -fexceptions -O0  -fPIC    -c ",
+					"src" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp/jniwrap/jniwrap.cpp",
+					"workingDirectory" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/x86"
+				}
+			],
+			"output" : "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/build/intermediates/cmake/debug/obj/x86/libmsgexchange_jni.so",
+			"toolchain" : "1282776189"
+		}
+	},
+	"toolchains" : 
+	{
+		"1282776189" : 
+		{
+			"cCompilerExecutable" : "C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/i686-linux-android-gcc.exe",
+			"cppCompilerExecutable" : "C:/AndroidSDK/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/i686-linux-android-g++.exe"
+		}
+	}
+}
