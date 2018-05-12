@@ -54,8 +54,8 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://raw.githubusercontent.com/Fleker/CumulusTV/a576e4d49cec21ad" +
                             "1fdabb0ed49190f87800e462/store/other/TWiT-horizontal.png")
-                    .setMediaUrl("http://hls.twit.tv/flosoft/mp4:twitStream_720/playlist.m3u8")
-                    .setName("TWiT.tv")
+                    .setMediaUrl("http://plexlivetv.ddns.net:1935/live/DISC.stream/playlist.m3u8")
+                    .setName("DISCHD")
                     .setNumber("133")
                     .build(),
             new JsonChannel.Builder()

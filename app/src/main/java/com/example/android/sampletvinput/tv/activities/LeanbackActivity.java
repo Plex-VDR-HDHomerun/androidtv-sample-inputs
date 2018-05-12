@@ -9,7 +9,7 @@ import android.support.annotation.VisibleForTesting;
 import android.util.Log;
 
 import com.crashlytics.android.Crashlytics;
-import com.felkertech.cumulustv.fileio.CloudStorageProvider;
+import com.example.android.sampletvinput.player.utils.CloudStorageProvider;
 import com.example.android.sampletvinput.utils.ActivityUtils;
 import com.example.android.sampletvinput.R;
 import com.example.android.sampletvinput.tv.fragments.LeanbackFragment;

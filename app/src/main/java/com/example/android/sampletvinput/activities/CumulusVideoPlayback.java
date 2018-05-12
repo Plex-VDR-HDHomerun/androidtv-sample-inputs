@@ -85,8 +85,8 @@ public class CumulusVideoPlayback extends AppCompatActivity {
                             Toast.makeText(CumulusVideoPlayback.this,
                                     R.string.msg_open_web,
                                     Toast.LENGTH_SHORT).show();
-                            LeanbackPlayer wv = new LeanbackWebPlayer(CumulusVideoPlayback.this,
-                                    new LeanbackPlayer.WebViewListener() {
+                            LeanbackWebPlayer wv = new LeanbackWebPlayer(CumulusVideoPlayback.this,
+                                    new LeanbackWebPlayer.WebViewListener() {
                                 @Override
                                 public void onPageFinished() {
                                     //Don't do anything

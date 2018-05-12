@@ -48,7 +48,7 @@ public class JsonListingPanelActivity extends Activity {
         if (getActionBar() != null) {
             getActionBar().hide();
         }
-        setContentView(com.felkertech.n.cumulustv.R.layout.activity_quick_settings);
+        setContentView(com.example.android.sampletvinput.R.layout.activity_quick_settings);
         ((TextView) findViewById(R.id.title)).setText(getString(R.string.link_to_m3u));
 
         // Sets the size and position of dialog activity.

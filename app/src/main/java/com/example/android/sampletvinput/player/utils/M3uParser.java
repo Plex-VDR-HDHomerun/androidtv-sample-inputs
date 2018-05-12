@@ -2,7 +2,7 @@ package com.example.android.sampletvinput.player.utils;
 
 import android.util.Log;
 
-import com.felkertech.cumulustv.model.JsonChannel;
+import com.example.android.sampletvinput.model.JsonChannel;
 
 import java.io.BufferedReader;
 import java.io.IOException;

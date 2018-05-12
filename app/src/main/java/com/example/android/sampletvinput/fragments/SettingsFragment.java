@@ -27,9 +27,9 @@ import android.util.SparseArray;
 
 import com.example.android.sampletvinput.model.ChannelDatabase;
 import com.example.android.sampletvinput.services.CumulusJobService;
-import com.felkertech.cumulustv.tv.CumulusTvTifService;
-import com.felkertech.cumulustv.utils.ActivityUtils;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.tv.CumulusTvTifService;
+import com.example.android.sampletvinput.utils.ActivityUtils;
+import com.example.android.sampletvinput.R;
 import com.google.android.media.tv.companionlibrary.BaseTvInputService;
 import com.google.android.media.tv.companionlibrary.model.Channel;
 import com.google.android.media.tv.companionlibrary.utils.TvContractUtils;

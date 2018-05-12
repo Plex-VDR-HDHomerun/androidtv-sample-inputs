@@ -25,7 +25,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.crashlytics.android.Crashlytics;
 import com.example.android.sampletvinput.activities.CumulusVideoPlayback;
 import com.example.android.sampletvinput.player.utils.AbstractFileParser;
 import com.example.android.sampletvinput.player.utils.FileParserFactory;
@@ -87,7 +86,6 @@ public class MainPicker extends CumulusTvPlugin {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         setLabel(label);
         setProprietaryEditing(false);
         setContentView(R.layout.fullphoto);

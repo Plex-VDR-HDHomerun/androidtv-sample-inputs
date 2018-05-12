@@ -28,7 +28,7 @@ import com.example.android.sampletvinput.plugins.CumulusChannel;
 import com.example.android.sampletvinput.plugins.CumulusTvPlugin;
 import com.example.android.sampletvinput.Intro.Intro;
 import com.example.android.sampletvinput.services.CumulusJobService;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.R;
 import com.example.android.sampletvinput.activities.HomepageWebViewActivity;
 import com.example.android.sampletvinput.activities.MainActivity;
 import com.example.android.sampletvinput.model.ChannelDatabase;
