@@ -3,7 +3,7 @@ arguments :
 -H/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/src/main/cpp
 -B/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/debug/x86
 -DANDROID_ABI=x86
--DANDROID_PLATFORM=android-23
+-DANDROID_PLATFORM=android-24
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/build/intermediates/cmake/debug/obj/x86
 -DCMAKE_BUILD_TYPE=Debug
 -DANDROID_NDK=/home/jetson/Android/Sdk/ndk-bundle

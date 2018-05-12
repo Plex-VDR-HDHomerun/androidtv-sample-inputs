@@ -88,7 +88,7 @@
             </intent-filter>
             <!-- Can be a shortcut -->
             <intent-filter>
-                <action android:name="com.felkertech.cumulustv.ADD_CHANNEL" />
+                <action android:name="com.example.android.sampletvinput.ADD_CHANNEL" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -180,7 +180,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.felkertech.cumulustv.RECEIVER" />
+                <action android:name="com.example.android.sampletvinput.RECEIVER" />
             </intent-filter>
         </receiver>
 
@@ -297,7 +297,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.felkertech.cumulustv.ADD_CHANNEL" />
+                <action android:name="com.example.android.sampletvinput.ADD_CHANNEL" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- Can import .m3u files -->
