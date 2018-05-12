@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.services;
+package com.example.android.sampletvinput.services;
 
 import android.annotation.TargetApi;
 import android.net.Uri;
@@ -8,10 +8,10 @@ import android.util.Log;
 import android.view.SurfaceView;
 import android.widget.TextView;
 
-import com.felkertech.cumulustv.player.CumulusTvPlayer;
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.utils.DriveSettingsManager;
-import com.felkertech.cumulustv.activities.CumulusDreamsSettingsActivity;
+import com.example.android.sampletvinput.player.LeanbackPlayer;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.utils.DriveSettingsManager;
+import com.example.android.sampletvinput.activities.CumulusDreamsSettingsActivity;
 
 /**
  * This class is a sample implementation of a DreamService. When activated, a

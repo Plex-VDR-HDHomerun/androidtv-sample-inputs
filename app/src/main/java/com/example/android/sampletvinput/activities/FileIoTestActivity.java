@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.activities;
+package com.example.android.sampletvinput.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,15 +17,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.felkertech.cumulustv.fileio.AbstractFileParser;
-import com.felkertech.cumulustv.fileio.AssetsFileParser;
-import com.felkertech.cumulustv.fileio.FileParserFactory;
-import com.felkertech.cumulustv.fileio.HttpFileParser;
-import com.felkertech.cumulustv.fileio.LocalFileParser;
-import com.felkertech.cumulustv.fileio.M3uParser;
-import com.felkertech.cumulustv.fileio.CumulusXmlParser;
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.player.utils.AbstractFileParser;
+import com.example.android.sampletvinput.player.utils.AssetsFileParser;
+import com.example.android.sampletvinput.player.utils.FileParserFactory;
+import com.example.android.sampletvinput.player.utils.HttpFileParser;
+import com.example.android.sampletvinput.player.utils.LocalFileParser;
+import com.example.android.sampletvinput.player.utils.M3uParser;
+import com.example.android.sampletvinput.player.utils.LeanbackXmltvParser;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.R;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -146,11 +146,11 @@ public class FileIoTestActivity extends AppCompatActivity {
         String extension = FileParserFactory.getFileExtension(uri);
         String result;
         if (extension.equals("xml")) {
-            CumulusXmlParser.TvListing listing = null;
+            LeanbackXmltvParser.TvListing listing = null;
             try {
-                listing = CumulusXmlParser.parse(inputStream);
+                listing = LeanbackXmltvParser.parse(inputStream);
                 result = listing.toString();
-            } catch (CumulusXmlParser.XmlTvParseException e) {
+            } catch (LeanbackXmltvParser.XmlTvParseException e) {
                 result = e.getMessage();
             }
         } else if (extension.equals("m3u") || uri.contains("m3u")) {

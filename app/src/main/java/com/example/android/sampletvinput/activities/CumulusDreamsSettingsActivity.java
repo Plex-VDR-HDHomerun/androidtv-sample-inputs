@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.activities;
+package com.example.android.sampletvinput.activities;
 
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
@@ -10,10 +10,10 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.Toast;
 
-import com.felkertech.cumulustv.utils.DriveSettingsManager;
-import com.felkertech.cumulustv.services.CumulusDreams;
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.model.ChannelDatabase;
+import com.example.android.sampletvinput.utils.DriveSettingsManager;
+import com.example.android.sampletvinput.services.CumulusDreams;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.model.ChannelDatabase;
 
 import org.json.JSONException;
 

@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.tv.activities;
+package com.example.android.sampletvinput.tv.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,12 +14,12 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.felkertech.cumulustv.model.RecyclerViewItem;
-import com.felkertech.cumulustv.ui.RecyclerViewColumnAdapter;
-import com.felkertech.cumulustv.utils.ActivityUtils;
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.exceptions.PlaybackIssueException;
-import com.felkertech.cumulustv.model.JsonChannel;
+import com.example.android.sampletvinput.model.RecyclerViewItem;
+import com.example.android.sampletvinput.ui.RecyclerViewColumnAdapter;
+import com.example.android.sampletvinput.utils.ActivityUtils;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.exceptions.PlaybackIssueException;
+import com.example.android.sampletvinput.model.JsonChannel;
 
 import org.json.JSONException;
 
