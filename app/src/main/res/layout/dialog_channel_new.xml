@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:hint="@string/channel_number"
+        android:inputType="number" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="@string/channel_name"
+        android:layout_below="@+id/number"
+        android:inputType="text|textCapWords" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_below="@id/name"
+        android:hint="@string/channel_logo"
+        android:inputType="text|textUri" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stream"
+        android:hint="@string/channel_media"
+        android:layout_below="@id/logo"
+        android:inputType="text|textUri" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash"
+        android:layout_below="@id/stream"
+        android:hint="@string/channel_splashscreen"
+        android:inputType="text|textUri" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/epg"
+        android:layout_below="@id/splash"
+        android:hint="@string/channel_epg"
+        android:inputType="text|textUri" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/epg"
+        android:text="@string/select_genres"
+        android:id="@+id/genres"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/surface_player"
+        android:nextFocusUp="@id/genres"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/genres"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:layout_width="128dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/surface"
+            android:layout_height="96dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/stream_open"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surface_player"
+        android:text="@string/open_stream"/>
+</RelativeLayout>

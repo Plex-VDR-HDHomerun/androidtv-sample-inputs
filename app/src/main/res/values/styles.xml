@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.Leanback">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:background">@drawable/c_background5</item>
+    </style>
+    <style name="CompatTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CompatThemeActionBar" parent="Theme.AppCompat">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="main_button">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:maxWidth">200dp</item>
+    </style>
+    <style name="background_text">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:background">@color/kindablack</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="background_text_art" parent="background_text">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="background_text_version" parent="background_text">
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="intro_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="intro_summary">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Theme.Panel" parent="@android:style/Theme.Material.Panel">
+        <item name="android:windowElevation">@dimen/side_panel_elevation</item>
+        <item name="android:windowBackground">@color/side_panel_background</item>
+        <item name="android:windowAnimationStyle">@style/side_panel_animation</item>
+    </style>
+
+    <style name="side_panel_animation">
+        <item name="android:windowEnterAnimation">@anim/side_panel_enter</item>
+        <item name="android:windowExitAnimation">@anim/side_panel_exit</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.Leanback">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="OptionsImageCardViewStyle" parent="Widget.Leanback.ImageCardViewStyle">
+        <item name="cardBackground">@color/colorPrimary</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="lbImageCardViewType">Title</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="TvPickerEditText">
+        <item name="android:layout_marginBottom">22dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+</resources>
