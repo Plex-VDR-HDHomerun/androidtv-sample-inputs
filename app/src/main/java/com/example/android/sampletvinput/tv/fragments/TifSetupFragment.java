@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.tv.fragments;
+package com.example.android.sampletvinput.tv.fragments;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.felkertech.cumulustv.services.CumulusJobService;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.services.CumulusJobService;
+import com.example.android.sampletvinput.R;
 import com.felkertech.settingsmanager.SettingsManager;
 import com.google.android.media.tv.companionlibrary.ChannelSetupFragment;
 import com.google.android.media.tv.companionlibrary.EpgSyncJobService;

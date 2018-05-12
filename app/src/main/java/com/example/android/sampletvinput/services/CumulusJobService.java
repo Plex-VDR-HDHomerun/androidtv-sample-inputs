@@ -54,7 +54,7 @@ public class CumulusJobService extends EpgSyncJobService {
                     "single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast" +
                     "&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct" +
                     "%3Dlinear&correlator=";
-    private static HashMap<String, CumulusXmlParser.TvListing> epgData;
+    private static HashMap<String, LeanbackXmltvParser.TvListing> epgData;
     public static final long DEFAULT_IMMEDIATE_EPG_DURATION_MILLIS = 1000 * 60 * 60; // 1 Hour
 
     /**
@@ -143,7 +143,7 @@ public class CumulusJobService extends EpgSyncJobService {
         if (jsonChannel != null && jsonChannel.getEpgUrl() != null &&
                 !jsonChannel.getEpgUrl().isEmpty() && epgData.containsKey(jsonChannel.getEpgUrl())) {
             List<Program> programForGivenTime = new ArrayList<>();
-            CumulusXmlParser.TvListing tvListing = epgData.get(jsonChannel.getEpgUrl());
+            LeanbackXmltvParser.TvListing tvListing = epgData.get(jsonChannel.getEpgUrl());
             if (tvListing == null) {
                 return programs; // Return empty programs.
             }
@@ -228,9 +228,9 @@ public class CumulusJobService extends EpgSyncJobService {
                             urlConnection.setReadTimeout(1000 * 5);
                             InputStream inputStream = urlConnection.getInputStream();
                             InputStream epgInputStream =  new BufferedInputStream(inputStream);
-                            CumulusXmlParser.TvListing tvListing = CumulusXmlParser.parse(epgInputStream);
+                            LeanbackXmltvParser.TvListing tvListing = LeanbackXmltvParser.parse(epgInputStream);
                             epgData.put(jsonChannel.getEpgUrl(), tvListing);
-                        } catch (IOException | CumulusXmlParser.XmlTvParseException e) {
+                        } catch (IOException | LeanbackXmltvParser.XmlTvParseException e) {
                             e.printStackTrace();
                         }
                     }

@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.services;
+package com.example.android.sampletvinput.services;
 
 import android.app.Notification;
 import android.media.browse.MediaBrowser;
@@ -16,11 +16,11 @@ import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.util.Log;
 
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.auto.CustomMediaSession;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.tv.CumulusTvTifService;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.auto.CustomMediaSession;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.tv.CumulusTvTifService;
+import com.example.android.sampletvinput.R;
 import com.google.android.media.tv.companionlibrary.model.Channel;
 
 import org.json.JSONException;

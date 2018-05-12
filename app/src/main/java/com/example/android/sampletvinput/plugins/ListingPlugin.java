@@ -20,14 +20,14 @@ import com.crashlytics.android.Crashlytics;
 import com.example.android.sampletvinput.player.utils.AbstractFileParser;
 import com.example.android.sampletvinput.player.utils.HttpFileParser;
 import com.example.android.sampletvinput.player.utils.M3uParser;
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.model.ChannelDatabaseFactory;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.model.JsonListing;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.model.ChannelDatabaseFactory;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.model.JsonListing;
 
 import io.fabric.sdk.android.Fabric;
 
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

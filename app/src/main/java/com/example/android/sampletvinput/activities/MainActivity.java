@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.activities;
+package com.example.android.sampletvinput.activities;
 
 import android.Manifest;
 import android.app.Activity;
@@ -25,16 +25,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
-import com.felkertech.cumulustv.fileio.CloudStorageProvider;
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.services.CumulusJobService;
-import com.felkertech.cumulustv.tv.activities.LeanbackActivity;
-import com.felkertech.cumulustv.utils.ActivityUtils;
-import com.felkertech.cumulustv.utils.AppUtils;
-import com.felkertech.cumulustv.utils.DriveSettingsManager;
-import com.felkertech.cumulustv.widgets.ChannelShortcut;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.player.utils.CloudStorageProvider;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.services.CumulusJobService;
+import com.example.android.sampletvinput.tv.activities.LeanbackActivity;
+import com.example.android.sampletvinput.utils.ActivityUtils;
+import com.example.android.sampletvinput.utils.AppUtils;
+import com.example.android.sampletvinput.utils.DriveSettingsManager;
+import com.example.android.sampletvinput.widget.ChannelShortcut;
+import com.example.android.sampletvinput.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;

@@ -1,10 +1,10 @@
-package com.felkertech.cumulustv.activities;
+package com.example.android.sampletvinput.activities;
 
 import android.os.Bundle;
 import android.webkit.WebView;
 
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.tv.activities.LeanbackActivity;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.tv.activities.LeanbackActivity;
 
 /**
  * Created by Nick on 9/4/2016.

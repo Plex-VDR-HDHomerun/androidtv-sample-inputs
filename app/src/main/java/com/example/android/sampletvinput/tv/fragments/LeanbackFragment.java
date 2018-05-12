@@ -31,7 +31,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.example.android.sampletvinput.activities.SettingsActivity;
-import com.example.android.sampletvinput.fileio.CloudStorageProvider;
+import com.example.android.sampletvinput.player.utils.CloudStorageProvider;
 import com.example.android.sampletvinput.plugins.CumulusChannel;
 import com.example.android.sampletvinput.plugins.CumulusTvPlugin;
 import com.example.android.sampletvinput.plugins.JsonListingPanelActivity;

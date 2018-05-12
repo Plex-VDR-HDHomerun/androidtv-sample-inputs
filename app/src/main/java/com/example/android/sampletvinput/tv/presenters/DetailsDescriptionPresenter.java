@@ -1,8 +1,8 @@
-package com.felkertech.cumulustv.tv.presenters;
+package com.example.android.sampletvinput.tv.presenters;
 
 import android.support.v17.leanback.widget.AbstractDetailsDescriptionPresenter;
 
-import com.felkertech.cumulustv.model.JsonChannel;
+import com.example.android.sampletvinput.model.JsonChannel;
 
 public class DetailsDescriptionPresenter extends AbstractDetailsDescriptionPresenter {
 

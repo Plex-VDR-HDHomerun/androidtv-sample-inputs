@@ -1,9 +1,9 @@
-package com.felkertech.cumulustv.tv.activities;
+package com.example.android.sampletvinput.tv.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.R;
 
 /*
  * Details activity class that loads LeanbackDetailsFragment class

@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.auto;
+package com.example.android.sampletvinput.auto;
 
 import android.content.Context;
 import android.media.session.MediaSession;
@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.util.Log;
 
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.player.CumulusTvPlayer;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.player.LeanbackPlayer;
 import com.google.android.media.tv.companionlibrary.TvPlayer;
 
 import org.json.JSONException;
@@ -23,7 +23,7 @@ public class CustomMediaSession extends MediaSessionCompat.Callback {
     private static final boolean DEBUG = true;
 
     private Context mContext;
-    private CumulusTvPlayer mPlayer;
+    private LeanbackPlayer mPlayer;
     private Callback mCallback;
 
     public CustomMediaSession(Context context, Callback callback) {
@@ -78,7 +78,7 @@ public class CustomMediaSession extends MediaSessionCompat.Callback {
         }
         // Actual playing
         if (mPlayer == null) {
-            mPlayer = new CumulusTvPlayer(mContext);
+            mPlayer = new LeanbackPlayer(mContext);
             mPlayer.registerCallback(new TvPlayer.Callback() {
                 @Override
                 public void onStarted() {

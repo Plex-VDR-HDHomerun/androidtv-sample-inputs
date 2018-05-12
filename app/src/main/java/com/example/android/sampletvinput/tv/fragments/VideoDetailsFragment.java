@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.tv.fragments;
+package com.example.android.sampletvinput.tv.fragments;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,15 +22,15 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 
 import com.bumptech.glide.Glide;
-import com.felkertech.cumulustv.utils.ActivityUtils;
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.activities.MainActivity;
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.tv.Utils;
-import com.felkertech.cumulustv.tv.activities.DetailsActivity;
-import com.felkertech.cumulustv.tv.activities.LeanbackActivity;
-import com.felkertech.cumulustv.tv.presenters.DetailsDescriptionPresenter;
+import com.example.android.sampletvinput.utils.ActivityUtils;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.activities.MainActivity;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.tv.Utils;
+import com.example.android.sampletvinput.tv.activities.DetailsActivity;
+import com.example.android.sampletvinput.tv.activities.LeanbackActivity;
+import com.example.android.sampletvinput.tv.presenters.DetailsDescriptionPresenter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.drive.Drive;

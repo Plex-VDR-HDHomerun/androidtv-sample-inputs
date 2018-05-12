@@ -53,7 +53,7 @@ import io.fabric.sdk.android.Fabric;
  * For the sake of open source software and examples, the built-in picker will be a plugin
  * Created by Nick on 8/7/2015.
  */
-public class MainPicker extends LeanbackTvPlugin {
+public class MainPicker extends CumulusTvPlugin {
     private static final String TAG = MainPicker.class.getSimpleName();
     private static final boolean DEBUG = true;
 
@@ -300,7 +300,7 @@ public class MainPicker extends LeanbackTvPlugin {
             return;
         }
         SurfaceView sv = (SurfaceView) viewHolder.getCustomView().findViewById(R.id.surface);
-        mTvPlayer = new CumulusTvPlayer(this);
+        mTvPlayer = new LeanbackPlayer(this);
         mTvPlayer.setSurface(sv.getHolder().getSurface());
         try {
             mTvPlayer.startPlaying(Uri.parse(url));
@@ -316,7 +316,7 @@ public class MainPicker extends LeanbackTvPlugin {
                 mPickerDialog.handlePlaybackSuccess();
             }
         });
-        mTvPlayer.registerErrorListener(new CumulusTvPlayer.ErrorListener() {
+        mTvPlayer.registerErrorListener(new LeanbackPlayer.ErrorListener() {
             @Override
             public void onError(Exception error) {
                 mPickerDialog.handlePlaybackError(error);
@@ -326,7 +326,7 @@ public class MainPicker extends LeanbackTvPlugin {
 
     public void loadStream(IMainPicker viewHolder, final String url) {
         SurfaceView sv = (SurfaceView) viewHolder.getCustomView().findViewById(R.id.surface);
-        mTvPlayer = new CumulusTvPlayer(this);
+        mTvPlayer = new LeanbackPlayer(this);
         mTvPlayer.setSurface(sv.getHolder().getSurface());
         try {
             mTvPlayer.startPlaying(Uri.parse(url));
@@ -342,7 +342,7 @@ public class MainPicker extends LeanbackTvPlugin {
                 mPickerDialog.handlePlaybackSuccess();
             }
         });
-        mTvPlayer.registerErrorListener(new CumulusTvPlayer.ErrorListener() {
+        mTvPlayer.registerErrorListener(new LeanbackPlayer.ErrorListener() {
             @Override
             public void onError(Exception error) {
                 mPickerDialog.handlePlaybackError(error);

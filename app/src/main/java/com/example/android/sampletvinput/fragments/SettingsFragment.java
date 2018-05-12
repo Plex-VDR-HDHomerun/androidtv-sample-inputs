@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.fragments;
+package com.example.android.sampletvinput.fragments;
 
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -25,8 +25,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
 
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.services.CumulusJobService;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.services.CumulusJobService;
 import com.felkertech.cumulustv.tv.CumulusTvTifService;
 import com.felkertech.cumulustv.utils.ActivityUtils;
 import com.felkertech.n.cumulustv.R;

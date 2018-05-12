@@ -1,4 +1,4 @@
-package com.felkertech.cumulustv.tv.presenters;
+package com.example.android.sampletvinput.tv.presenters;
 
 import android.support.v17.leanback.widget.ImageCardView;
 import android.support.v17.leanback.widget.Presenter;
@@ -7,9 +7,9 @@ import android.view.ContextThemeWrapper;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.felkertech.n.cumulustv.R;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.model.Option;
+import com.example.android.sampletvinput.R;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.model.Option;
 
 /**
  * A presenter which can be used to show options with an optional title along the bottom.

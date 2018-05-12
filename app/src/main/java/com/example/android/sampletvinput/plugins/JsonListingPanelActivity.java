@@ -20,13 +20,13 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.felkertech.cumulustv.model.ChannelDatabase;
-import com.felkertech.cumulustv.model.ChannelDatabaseFactory;
-import com.felkertech.cumulustv.model.JsonChannel;
-import com.felkertech.cumulustv.model.JsonListing;
-import com.felkertech.cumulustv.model.RecyclerViewItem;
-import com.felkertech.cumulustv.ui.RecyclerViewColumnAdapter;
-import com.felkertech.n.cumulustv.R;
+import com.example.android.sampletvinput.model.ChannelDatabase;
+import com.example.android.sampletvinput.model.ChannelDatabaseFactory;
+import com.example.android.sampletvinput.model.JsonChannel;
+import com.example.android.sampletvinput.model.JsonListing;
+import com.example.android.sampletvinput.model.RecyclerViewItem;
+import com.example.android.sampletvinput.ui.RecyclerViewColumnAdapter;
+import com.example.android.sampletvinput.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
