@@ -1,8 +1,8 @@
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/msgexchange.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/edit_cache.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/rebuild_cache.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/msgexchange_jni.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/edit_cache.dir
-C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/rebuild_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/edit_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/rebuild_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/msgexchange/CMakeFiles/msgexchange.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/rebuild_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/edit_cache.dir
+/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/armeabi-v7a/jniwrap/CMakeFiles/msgexchange_jni.dir
