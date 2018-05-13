@@ -9,8 +9,8 @@
     <string name="sm_google_drive_id" translatable="false">GDRIVE_FILE</string>
     <string name="sm_last_version" translatable="false">VERSION</string>
 
-    <string name="intro_title_1">Welcome to CumulusTV</string>
-    <string name="intro_msg_1">"CumulusTV lets you create custom channels that can be played through the Live Channels app. Don't know what to watch? Pick a suggested channel."</string>
+    <string name="intro_title_1">Welcome to PLEX DVR Input</string>
+    <string name="intro_msg_1">"PLEX DVR Input lets you import Plex livetv channels that can be played through the Live Channels app. Don't know what to watch? Pick a suggested channel."</string>
     <string name="intro_title_2">Use Google Drive</string>
     <string name="intro_msg_2">You can create a JSON file on Google Drive and have your channels synced across all your devices.</string>
     <string name="intro_title_21">How to Sync</string>
