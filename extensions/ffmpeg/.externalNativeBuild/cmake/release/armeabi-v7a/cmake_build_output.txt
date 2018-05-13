@@ -14,4 +14,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a
+-- Build files have been written to: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a

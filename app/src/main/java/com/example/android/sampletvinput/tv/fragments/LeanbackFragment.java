@@ -32,8 +32,8 @@ import android.widget.Toast;
 
 import com.example.android.sampletvinput.activities.SettingsActivity;
 import com.example.android.sampletvinput.player.utils.CloudStorageProvider;
-import com.example.android.sampletvinput.plugins.CumulusChannel;
-import com.example.android.sampletvinput.plugins.CumulusTvPlugin;
+import com.felkertech.cumulustv.plugins.CumulusChannel;
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
 import com.example.android.sampletvinput.plugins.JsonListingPanelActivity;
 import com.example.android.sampletvinput.plugins.ListingPlugin;
 import com.example.android.sampletvinput.plugins.MainPicker;

@@ -24,6 +24,7 @@ import com.example.android.sampletvinput.model.ChannelDatabase;
 import com.example.android.sampletvinput.model.ChannelDatabaseFactory;
 import com.example.android.sampletvinput.model.JsonChannel;
 import com.example.android.sampletvinput.model.JsonListing;
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
 
 import io.fabric.sdk.android.Fabric;
 

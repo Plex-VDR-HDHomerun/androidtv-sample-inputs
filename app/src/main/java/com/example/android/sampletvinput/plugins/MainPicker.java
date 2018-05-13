@@ -37,6 +37,8 @@ import com.example.android.sampletvinput.player.LeanbackPlayer;
 import com.example.android.sampletvinput.utils.AppUtils;
 import com.example.android.sampletvinput.utils.PermissionUtils;
 import com.example.android.sampletvinput.R;
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
+import com.felkertech.cumulustv.plugins.CumulusChannel;
 import com.felkertech.settingsmanager.common.CommaArray;
 import com.google.android.media.tv.companionlibrary.TvPlayer;
 

@@ -24,8 +24,8 @@ import android.widget.Toast;
 
 import com.example.android.sampletvinput.activities.CumulusVideoPlayback;
 import com.example.android.sampletvinput.player.utils.CloudStorageProvider;
-import com.example.android.sampletvinput.plugins.CumulusChannel;
-import com.example.android.sampletvinput.plugins.CumulusTvPlugin;
+import com.felkertech.cumulustv.plugins.CumulusChannel;
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
 import com.example.android.sampletvinput.Intro.Intro;
 import com.example.android.sampletvinput.services.CumulusJobService;
 import com.example.android.sampletvinput.R;
@@ -67,8 +67,8 @@ public class ActivityUtils {
     public static final int REQUEST_CODE_CREATOR = 102;
     public static final int REQUEST_CODE_OPENER = 104;
     public static final int PERMISSION_EXPORT_M3U = 201;
-    public static final ComponentName TV_INPUT_SERVICE = new ComponentName("com.felkertech.n.cumulustv",
-            "com.felkertech.cumulustv.tv.CumulusTvTifService");
+    public static final ComponentName TV_INPUT_SERVICE = new ComponentName("com.example.android.sampletvinput",
+            "com.example.android.sampletvinput.tv.CumulusTvTifService");
 
     public final static int LAST_GOOD_BUILD = 27;
 

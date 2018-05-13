@@ -1,1 +1,4 @@
-include ':app', ':library', ':msgexchange'
+include ':app', ':library', ':plugins', ':msgexchange'
+include ':extension-ffmpeg'
+
+project(':extension-ffmpeg').projectDir = new File(settingsDir, 'extensions/ffmpeg')

@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "/home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "/home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++ 
@@ -24,22 +24,22 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "/home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "/home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_c869a"
-[1/2] Building C object CMakeFiles/cmTC_c869a.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_c869a
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ed7fa"
+[1/2] Building C object CMakeFiles/cmTC_ed7fa.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_ed7fa
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_67261"
-[1/2] Building C object CMakeFiles/cmTC_67261.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_67261
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b17b9"
+[1/2] Building C object CMakeFiles/cmTC_b17b9.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_b17b9
 Using built-in specs.
 COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc
 COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper
@@ -49,17 +49,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/
 LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_67261' '-mtls-dialect=gnu'
- /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn9KZWb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_67261 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_67261.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_b17b9' '-mtls-dialect=gnu'
+ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4g2cXz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_b17b9 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_b17b9.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_67261"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_67261.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_67261]
+  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b17b9"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_b17b9.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_b17b9]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper]
@@ -69,13 +69,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/]
   ignore line: [LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_67261' '-mtls-dialect=gnu']
-  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn9KZWb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_67261 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_67261.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_b17b9' '-mtls-dialect=gnu']
+  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4g2cXz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_b17b9 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_b17b9.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o]
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccn9KZWb.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc4g2cXz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -92,7 +92,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_67261] ==> ignore
+    arg [cmTC_b17b9] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb]
@@ -114,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_67261.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_b17b9.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-ldl] ==> lib [dl]
@@ -136,11 +136,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_9a01e"
-[1/2] Building C object CMakeFiles/cmTC_9a01e.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_9a01e
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_677dc"
+[1/2] Building C object CMakeFiles/cmTC_677dc.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_677dc
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -150,11 +150,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_9
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_a7fd4"
-[1/2] Building C object CMakeFiles/cmTC_a7fd4.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_a7fd4
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_04185"
+[1/2] Building C object CMakeFiles/cmTC_04185.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_04185
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -164,11 +164,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_a
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_57e08"
-[1/2] Building C object CMakeFiles/cmTC_57e08.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_57e08
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_568c4"
+[1/2] Building C object CMakeFiles/cmTC_568c4.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_568c4
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -176,19 +176,19 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_5
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0f62c"
-[1/2] Building CXX object CMakeFiles/cmTC_0f62c.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_0f62c
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_93c4d"
+[1/2] Building CXX object CMakeFiles/cmTC_93c4d.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_93c4d
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_044db"
-[1/2] Building CXX object CMakeFiles/cmTC_044db.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_044db
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_685bc"
+[1/2] Building CXX object CMakeFiles/cmTC_685bc.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_685bc
 Using built-in specs.
 COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++
 COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper
@@ -198,17 +198,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/
 LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_044db' '-mtls-dialect=gnu'
- /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDufIlz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_044db /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_044db.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_685bc' '-mtls-dialect=gnu'
+ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXhOaoN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_685bc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_685bc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-androideabi-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_044db"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_044db.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_044db]
+  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_685bc"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_685bc.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_685bc]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper]
@@ -218,13 +218,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/]
   ignore line: [LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_044db' '-mtls-dialect=gnu']
-  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDufIlz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_044db /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_044db.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=vfpv3-d16' '-mthumb' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_685bc' '-mtls-dialect=gnu']
+  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXhOaoN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm --eh-frame-hdr -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -pie -o cmTC_685bc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --fix-cortex-a8 --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_685bc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtend_android.o]
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/arm-linux-androideabi/4.9.x/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccDufIlz.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccXhOaoN.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -241,7 +241,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_044db] ==> ignore
+    arg [cmTC_685bc] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb]
@@ -263,7 +263,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_044db.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_685bc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -287,11 +287,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_02185"
-[1/2] Building CXX object CMakeFiles/cmTC_02185.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_02185
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_bf3d4"
+[1/2] Building CXX object CMakeFiles/cmTC_bf3d4.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_bf3d4
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -354,11 +354,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_81a37"
-[1/2] Building CXX object CMakeFiles/cmTC_81a37.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_81a37
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_40151"
+[1/2] Building CXX object CMakeFiles/cmTC_40151.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_40151
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -421,11 +421,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/extensions/ffmpeg/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_88520"
-[1/2] Building CXX object CMakeFiles/cmTC_88520.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_88520
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e2602"
+[1/2] Building CXX object CMakeFiles/cmTC_e2602.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_e2602
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

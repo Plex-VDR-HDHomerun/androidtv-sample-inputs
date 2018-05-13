@@ -119,11 +119,11 @@ public class SettingsFragment extends LeanbackSettingsFragment
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                updateChannels(getActivity(), "com.felkertech.n.cumulustv/com.felkertech.cumulustv.tv.CumulusTvTifService", tvChannels);
+                updateChannels(getActivity(), "com.example.android.sampletvinput.tv.CumulusTvTifService", tvChannels);
 
                 Cursor cursor = getActivity().getContentResolver().query(
-                        TvContract.buildChannelsUriForInput("com.felkertech.n.cumulustv/com.felkertech.cumulustv.tv.CumulusTvTifService"), null, null, null, null);
-                Log.d("S", "Query from " + TvContract.buildChannelsUriForInput("com.felkertech.n.cumulustv/com.felkertech.cumulustv.tv.CumulusTvTifService"));
+                        TvContract.buildChannelsUriForInput("com.example.android.sampletvinput.tv.CumulusTvTifService"), null, null, null, null);
+                Log.d("S", "Query from " + TvContract.buildChannelsUriForInput("com.example.android.sampletvinput/com.example.android.sampletvinput.tv.CumulusTvTifService"));
                 StringBuilder builder = new StringBuilder();
                 if (cursor == null) {
                     builder.append("null");

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.example.android.sampletvinput.model.ChannelDatabase;
-import com.example.android.sampletvinput.plugins.CumulusChannel;
+import com.felkertech.cumulustv.plugins.CumulusChannel;
 import com.example.android.sampletvinput.R;
 
 import java.io.IOException;

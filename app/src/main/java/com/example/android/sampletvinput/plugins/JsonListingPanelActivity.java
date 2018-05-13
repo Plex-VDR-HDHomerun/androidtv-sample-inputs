@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
 import com.example.android.sampletvinput.model.ChannelDatabase;
 import com.example.android.sampletvinput.model.ChannelDatabaseFactory;
 import com.example.android.sampletvinput.model.JsonChannel;

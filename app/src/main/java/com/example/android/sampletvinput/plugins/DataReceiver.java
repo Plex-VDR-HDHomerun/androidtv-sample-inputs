@@ -17,6 +17,7 @@ import com.example.android.sampletvinput.utils.ActivityUtils;
 import com.example.android.sampletvinput.utils.DriveSettingsManager;
 import com.example.android.sampletvinput.model.ChannelDatabase;
 import com.example.android.sampletvinput.model.JsonChannel;
+import com.felkertech.cumulustv.plugins.CumulusTvPlugin;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.drive.Drive;

@@ -1,6 +1,6 @@
 package com.example.android.sampletvinput.model;
 
-import com.example.android.sampletvinput.plugins.JsonContainer;
+import com.felkertech.cumulustv.plugins.JsonContainer;
 
 import org.json.JSONException;
 import org.json.JSONObject;

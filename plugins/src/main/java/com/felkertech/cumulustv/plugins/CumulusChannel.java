@@ -1,4 +1,4 @@
-package com.example.android.sampletvinput.plugins;
+package com.felkertech.cumulustv.plugins;
 
 import android.content.ComponentName;
 import android.support.annotation.NonNull;

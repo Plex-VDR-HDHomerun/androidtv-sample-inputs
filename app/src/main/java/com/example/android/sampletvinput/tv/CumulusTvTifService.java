@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.ComponentName;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.media.PlaybackParams;
 import android.media.tv.TvContentRating;
 import android.media.tv.TvInputManager;
 import android.media.tv.TvInputService;
@@ -29,6 +30,7 @@ import com.example.android.sampletvinput.model.ChannelDatabase;
 import com.example.android.sampletvinput.model.JsonChannel;
 import com.example.android.sampletvinput.player.LeanbackPlayer;
 import com.example.android.sampletvinput.player.LeanbackWebPlayer;
+import com.example.android.sampletvinput.player.StreamBundle;
 import com.example.android.sampletvinput.player.MediaSourceFactory;
 import com.example.android.sampletvinput.services.CumulusJobService;
 import com.example.android.sampletvinput.R;
@@ -234,19 +236,26 @@ public class CumulusTvTifService extends BaseTvInputService {
             }
         }
 
-        @TargetApi(Build.VERSION_CODES.M)
-        @RequiresApi(api = Build.VERSION_CODES.M)
+        @Override
+        public void onTimeShiftPause() {
+            mPlayer.pause();
+        }
+
+        @Override
+        public void onTimeShiftResume() {
+            mPlayer.play();
+        }
+
+
         @Override
         public long onTimeShiftGetCurrentPosition() {
-            if (mPlayer == null) {
-                return TvInputManager.TIME_SHIFT_INVALID_TIME;
+            long currentPos = System.currentTimeMillis();
+
+            if(mPlayer == null) {
+                return currentPos;
             }
-            long currentMs = tuneTime + mPlayer.getCurrentPosition();
-            if (DEBUG) {
-                Log.d(TAG, currentMs + "  " + onTimeShiftGetStartPosition() + " start position");
-                Log.d(TAG, (currentMs - onTimeShiftGetStartPosition()) + " diff start position");
-            }
-            return currentMs;
+
+            return mPlayer.getCurrentPosition();
         }
 
         @Override

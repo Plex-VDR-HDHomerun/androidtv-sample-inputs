@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="kindablack">#33000000</color>
-    <color name="colorPrimary">#d9000000</color>
-    <color name="colorPrimaryDark">#111112</color>
+    <color name="colorPrimary">#c0000000</color>
+    <color name="colorPrimaryDark">#da000000</color>
     <color name="colorAccent">#64FFDA</color>
     <color name="picker_background">#77333333</color>
 
     <color name="side_panel_background">@color/colorPrimary</color>
     <color name="side_panel_header">@color/colorPrimaryDark</color>
 
-    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_start">#c4000000</color>
     <color name="background_gradient_end">#DDDDDD</color>
     <color name="fastlane_background">@color/colorPrimary</color>
     <color name="search_opaque">#ffaa3f</color>

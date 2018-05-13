@@ -1,4 +1,4 @@
-# Install script for directory: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/src/main/cpp/jniwrap
+# Install script for directory: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/src/main/cpp/jniwrap
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

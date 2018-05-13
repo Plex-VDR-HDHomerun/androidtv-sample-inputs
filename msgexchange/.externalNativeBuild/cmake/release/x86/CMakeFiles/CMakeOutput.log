@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.6.0-rc2/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.6.0-rc2/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-g++ 
@@ -24,22 +24,22 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "/home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.6.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "/home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/3.6.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_462f6"
-[1/2] Building C object CMakeFiles/cmTC_462f6.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_462f6
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_82f68"
+[1/2] Building C object CMakeFiles/cmTC_82f68.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_82f68
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_c3f9e"
-[1/2] Building C object CMakeFiles/cmTC_c3f9e.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_c3f9e
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e5f65"
+[1/2] Building C object CMakeFiles/cmTC_e5f65.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_e5f65
 Using built-in specs.
 COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-gcc
 COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper
@@ -49,17 +49,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/
 LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_c3f9e' '-mtune=intel' '-march=i686'
- /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJtormh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_c3f9e /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_c3f9e.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_e5f65' '-mtune=intel' '-march=i686'
+ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccslWzTx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_e5f65 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_e5f65.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_c3f9e"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_c3f9e.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_c3f9e]
+  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e5f65"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_e5f65.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_e5f65]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper]
@@ -69,13 +69,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/]
   ignore line: [LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_c3f9e' '-mtune=intel' '-march=i686']
-  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJtormh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_c3f9e /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_c3f9e.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_e5f65' '-mtune=intel' '-march=i686']
+  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/ccslWzTx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_e5f65 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_e5f65.dir/CMakeCCompilerABI.c.o -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccJtormh.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccslWzTx.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -91,7 +91,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c3f9e] ==> ignore
+    arg [cmTC_e5f65] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x]
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc]
@@ -110,7 +110,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_c3f9e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_e5f65.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-ldl] ==> lib [dl]
@@ -130,11 +130,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e388b"
-[1/2] Building C object CMakeFiles/cmTC_e388b.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_e388b
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1aac2"
+[1/2] Building C object CMakeFiles/cmTC_1aac2.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_1aac2
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -144,11 +144,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_e
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d583f"
-[1/2] Building C object CMakeFiles/cmTC_d583f.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d583f
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_f6292"
+[1/2] Building C object CMakeFiles/cmTC_f6292.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_f6292
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -158,11 +158,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0ea09"
-[1/2] Building C object CMakeFiles/cmTC_0ea09.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_0ea09
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ee617"
+[1/2] Building C object CMakeFiles/cmTC_ee617.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_ee617
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -170,19 +170,19 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_4d04e"
-[1/2] Building CXX object CMakeFiles/cmTC_4d04e.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_4d04e
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0e5fc"
+[1/2] Building CXX object CMakeFiles/cmTC_0e5fc.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_0e5fc
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_637c2"
-[1/2] Building CXX object CMakeFiles/cmTC_637c2.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_637c2
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_70d60"
+[1/2] Building CXX object CMakeFiles/cmTC_70d60.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_70d60
 Using built-in specs.
 COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-g++
 COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper
@@ -192,17 +192,17 @@ Thread model: posix
 gcc version 4.9.x 20150123 (prerelease) (GCC) 
 COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/
 LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/
-COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_637c2' '-mtune=intel' '-march=i686'
- /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cczSLRIw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_637c2 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_637c2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_70d60' '-mtune=intel' '-march=i686'
+ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cchz3INR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_70d60 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_70d60.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_637c2"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_637c2.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_637c2]
+  ignore line: [Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_70d60"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_70d60.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_70d60]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper]
@@ -212,13 +212,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.x 20150123 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/]
   ignore line: [LIBRARY_PATH=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/:/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib/:/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_637c2' '-mtune=intel' '-march=i686']
-  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cczSLRIw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_637c2 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_637c2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-isystem' '/home/jetson/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android' '-D' '__ANDROID_API__=21' '-g' '-D' 'ANDROID' '-ffunction-sections' '-funwind-tables' '-fstack-protector-strong' '-mstackrealign' '-Wformat=1' '-Werror=format-security' '-pie' '-fPIE' '-v' '-o' 'cmTC_70d60' '-mtune=intel' '-march=i686']
+  link line: [ /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2 -plugin /home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so -plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper -plugin-opt=-fresolution=/tmp/cchz3INR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-ldl -plugin-opt=-pass-through=-lgcc --sysroot=/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -z noexecstack -z relro -z now -pie -o cmTC_70d60 /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc -L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_70d60.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lc -ldl -lgcc /home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../libexec/gcc/i686-linux-android/4.9.x/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cczSLRIw.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cchz3INR.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-ldl] ==> ignore
@@ -234,7 +234,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_637c2] ==> ignore
+    arg [cmTC_70d60] ==> ignore
     arg [/home/jetson/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/i686-linux-android/4.9.x]
     arg [-L/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc] ==> dir [/home/jetson/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/../lib/gcc]
@@ -253,7 +253,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_637c2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_70d60.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -275,11 +275,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_12cd6"
-[1/2] Building CXX object CMakeFiles/cmTC_12cd6.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_12cd6
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b2613"
+[1/2] Building CXX object CMakeFiles/cmTC_b2613.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_b2613
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -342,11 +342,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fc2ac"
-[1/2] Building CXX object CMakeFiles/cmTC_fc2ac.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_fc2ac
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_20fbd"
+[1/2] Building CXX object CMakeFiles/cmTC_20fbd.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_20fbd
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -409,11 +409,11 @@ Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_f
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/jetson/StudioProjects/androidtv-shield-iptv/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
+Change Dir: /home/jetson/StudioProjects/Leanback-IPTV/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_0a498"
-[1/2] Building CXX object CMakeFiles/cmTC_0a498.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_0a498
+Run Build Command:"/home/jetson/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_729de"
+[1/2] Building CXX object CMakeFiles/cmTC_729de.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_729de
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

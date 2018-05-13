@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.media.tv.TvContract;
 import android.support.annotation.NonNull;
 
-import com.example.android.sampletvinput.plugins.CumulusChannel;
+import com.felkertech.cumulustv.plugins.CumulusChannel;
 import com.example.android.sampletvinput.tv.activities.PlaybackQuickSettingsActivity;
 import com.felkertech.settingsmanager.common.CommaArray;
 import com.google.android.media.tv.companionlibrary.model.Channel;

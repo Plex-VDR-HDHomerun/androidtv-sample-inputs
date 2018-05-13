@@ -14,12 +14,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 'android-27'
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 'android-25'
+    buildToolsVersion '24.0.2'
 
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 27
+        minSdkVersion 24
+        targetSdkVersion 25
+        consumerProguardFiles 'proguard-rules.txt'
 
         ndk {
             moduleName "ffmpeg"
@@ -45,10 +46,10 @@ android {
         }
     }
 
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '25.0.2'
 }
 
 dependencies {
-    compile "com.android.support:support-core-utils:27.1.1"
+    compile "com.android.support:support-core-utils:25.0.1"
     compile "com.google.android.exoplayer:exoplayer-core:2.6.1"
 }

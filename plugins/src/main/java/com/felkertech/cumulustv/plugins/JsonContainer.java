@@ -1,4 +1,4 @@
-package com.example.android.sampletvinput.plugins;
+package com.felkertech.cumulustv.plugins;
 
 import org.json.JSONException;
 import org.json.JSONObject;
