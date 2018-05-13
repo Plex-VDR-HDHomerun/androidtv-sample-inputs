@@ -21,7 +21,7 @@ import java.util.Arrays;
 @RunWith(RobolectricGradleTestRunner.class)
 @Config(constants = BuildConfig.class, sdk = 23, manifest = "src/main/AndroidManifest.xml")
 public class RecordedProgramTest extends TestCase {
-    private static final String TEST_INPUT_ID = "com.example.android.sampletvinput/.Test";
+    private static final String TEST_INPUT_ID = "com.example.android.plexdvrinput/.Test";
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Test

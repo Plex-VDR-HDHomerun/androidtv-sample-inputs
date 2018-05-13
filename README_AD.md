@@ -63,7 +63,7 @@ metadata in xmltv.xml. Note: The following request URL is only for testing. You 
 with the VAST tag requested from your ads providers.
 
 ```xml
-<channel id="com.example.android.sampletvinput.2-2" repeat-programs="true">
+<channel id="plexdvrinput.2-2" repeat-programs="true">
     ...
     <advertisement
         type="VAST">

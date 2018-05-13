@@ -94,7 +94,7 @@ public class TestJobService extends EpgSyncJobService {
                     .setEndTimeUtcMillis(1000 * 60 * 15) // 15 Minutes long
                     .build()));
         } else if (channel.getOriginalNetworkId() ==
-                "com.example.android.sampletvinput.2-1".hashCode()) {
+                "com.example.android.plexdvrinput.2-1".hashCode()) {
             // Obtain programs from Xml
             Uri xmlUri = Uri.parse("android.resource://" + mContext.getPackageName()
                     + "/" + com.google.android.media.tv.companionlibrary.test.R.raw.xmltv)

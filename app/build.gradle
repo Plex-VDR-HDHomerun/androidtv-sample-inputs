@@ -20,13 +20,13 @@ android {
     buildToolsVersion '24.0.2'
 
     defaultConfig {
-        applicationId "com.example.android.sampletvinput"
-        minSdkVersion 21
+        applicationId "com.example.android.plexdvrinput"
+        minSdkVersion 23
         targetSdkVersion 25
         versionCode 65
         versionName '1.7.9'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        testApplicationId 'com.example.android.sampletvinput.test'
+        testApplicationId 'com.example.android.plexdvrinput.test'
     }
     signingConfigs {
         debug {

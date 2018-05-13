@@ -99,7 +99,7 @@ public class ChannelTest extends TestCase {
                 .setInputId("TestInputService")
                 .setNetworkAffiliation("Network Affiliation")
                 .setOriginalNetworkId(2)
-                .setPackageName("com.example.android.sampletvinput")
+                .setPackageName("com.example.android.plexdvrinput")
                 .setSearchable(false)
                 .setServiceId(3)
                 .setTransportStreamId(4)
