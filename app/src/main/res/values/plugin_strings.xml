@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ACTIONS -->
-    <string name="add_channel" translatable="false">com.example.android.sampletvinput.ADD_CHANNEL</string>
-    <string name="receive_data" translatable="false">com.example.android.sampletvinput.RECEIVER</string>
+    <string name="add_channel" translatable="false">com.example.android.plexdvrinput.ADD_CHANNEL</string>
+    <string name="receive_data" translatable="false">com.example.android.plexdvrinput.RECEIVER</string>
 </resources>
