@@ -341,7 +341,7 @@ public class ChannelDatabase {
                             .append(jsonChannel.getLogo()).append("\"");
                 }
                 builder.append(" " + M3uParser.Constants.CH_NAME + "=\"")
-                        .append(jsonChannel.getNumber()).append("\"");
+                        .append(jsonChannel.getName()).append("\"");
                 if (jsonChannel.isAudioOnly()) {
                     builder.append(" " + M3uParser.Constants.CH_AUDIO_ONLY + "=1");
                 }
