@@ -36,6 +36,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/58646/s58646_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-340-683")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("CNN HD")
                     .setNumber("600")
                     .build(),
@@ -44,6 +45,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/21222/s28717_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-90-111")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("NBC HD")
                     .setNumber("508")
                     .build(),
@@ -52,6 +54,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/56905/s56905_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-410-632")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("DISCHD")
                     .setNumber("620")
                     .build(),
@@ -60,6 +63,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/49438/s49438_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-420-604")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("NATGEO")
                     .setNumber("621")
                     .build(),
@@ -68,6 +72,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.NEWS)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/57708/s57708_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-450-659")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setNumber("632")
                     .setName("History HD")
                     .build(),
@@ -76,6 +81,7 @@ public class SuggestedChannels {
                             TvContract.Programs.Genres.ENTERTAINMENT)
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/45438/s45438_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-620-622")
+                    .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("AWE HD")
                     .setNumber("699")
                     .build()
