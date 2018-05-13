@@ -47,7 +47,7 @@ public class SuggestedChannels {
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-50-107")
                     .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("NBC HD")
-                    .setNumber("42590a51bff4bdb2c9d2896367e2de69")
+                    .setNumber("508")
                     .build(),
             new JsonChannel.Builder()
                     .setGenres(TvContract.Programs.Genres.TECH_SCIENCE + "," +
@@ -56,7 +56,7 @@ public class SuggestedChannels {
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-410-632")
                     .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("DISCHD")
-                    .setNumber("d2862c091d8bce71b36113de8137454f")
+                    .setNumber("620")
                     .build(),
             new JsonChannel.Builder()
                     .setGenres(TvContract.Programs.Genres.TECH_SCIENCE + "," +
@@ -65,7 +65,7 @@ public class SuggestedChannels {
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-420-604")
                     .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("NATGEO")
-                    .setNumber("5425604f1e6e7659fba4f57a22698897")
+                    .setNumber("621")
                     .build(),
             new JsonChannel.Builder()
                     .setGenres(TvContract.Programs.Genres.TECH_SCIENCE + "," +
@@ -73,8 +73,8 @@ public class SuggestedChannels {
                     .setLogo("https://zap2it.tmsimg.com/h3/NowShowing/57708/s57708_h3_aa.png")
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-450-659")
                     .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
-                    .setNumber("0852a54fc0be34cefccbfc914dd28870")
                     .setName("History HD")
+                    .setNumber("628")
                     .build(),
             new JsonChannel.Builder()
                     .setGenres(TvContract.Programs.Genres.ARTS + "," +
@@ -83,7 +83,7 @@ public class SuggestedChannels {
                     .setMediaUrl("http://plexlivetv.ddns.net:3000/EXT/I-0-620-622")
                     .setEpgUrl("http://plexlivetv.ddns.net/playlist/iptvGuide.xml")
                     .setName("AWE HD")
-                    .setNumber("3ca7230947c960711bcfb9e512e6211e")
+                    .setNumber("669")
                     .build()
     };
 
