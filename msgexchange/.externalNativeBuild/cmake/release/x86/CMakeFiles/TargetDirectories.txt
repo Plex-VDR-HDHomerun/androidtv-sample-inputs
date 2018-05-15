@@ -1,0 +1,8 @@
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/msgexchange/CMakeFiles/msgexchange.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/msgexchange/CMakeFiles/edit_cache.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/msgexchange/CMakeFiles/rebuild_cache.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/jniwrap/CMakeFiles/msgexchange_jni.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/jniwrap/CMakeFiles/edit_cache.dir
+C:/Users/Z400/androidtv-iptv-util/msgexchange/.externalNativeBuild/cmake/release/x86/jniwrap/CMakeFiles/rebuild_cache.dir
