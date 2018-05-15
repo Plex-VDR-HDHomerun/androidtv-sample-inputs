@@ -4,7 +4,6 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
-import android.util.Xml;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,8 +19,6 @@ import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
 import com.example.android.sampletvinput.xmltv.XmlTvParser;
-import com.google.android.media.tv.companionlibrary.model.Channel;
-import com.google.android.media.tv.companionlibrary.model.Program;
 
 /**
  * Static helper methods for fetching the channel feed.
@@ -40,7 +37,7 @@ public class IptvUtil {
     private IptvUtil() {
     }
 
-    private static XmlTvParser.TvListing getTvListings(Context context, String url, int format) {
+    public static XmlTvParser.TvListing getTvListings(Context context, String url, int format) {
 
         if (sampleTvListings.containsKey(url)) {
             return sampleTvListings.get(url);
@@ -58,7 +55,7 @@ public class IptvUtil {
             if (format == FORMAT_M3U) {
                 sampleTvListing = parse(inputStream);
             } else {
-                sampleTvListing = XmlTvParser.parse(inputStream, Xml.newPullParser());
+                sampleTvListing = XmlTvParser.parse(inputStream);
             }
         } catch (IOException e) {
             Log.e(TAG, "Error in fetching " + catalogUri, e);
@@ -87,8 +84,8 @@ public class IptvUtil {
     private static XmlTvParser.TvListing parse(InputStream inputStream) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
         String line;
-        List<Channel> channels = new ArrayList<>();
-        List<Program> programs = new ArrayList<>();
+        List<XmlTvParser.Channel> channels = new ArrayList<>();
+        List<XmlTvParser.Program> programs = new ArrayList<>();
         Map<Integer, Integer> channelMap = new HashMap<>();
 
         while ((line = in.readLine()) != null) {
@@ -115,7 +112,7 @@ public class IptvUtil {
                         } else if (part.startsWith("tvg-logo=")) {
                             int end = part.indexOf("\"", 10);
                             if (end > 10) {
-                                icon = new XmlTvParser.XmlTvIcon("http://plexlivetv.ddns.net/playlist/iptvGuide.xml"
+                                icon = new XmlTvParser.XmlTvIcon("http://logo.iptv.ink/"
                                         + part.substring(10, end));
                             }
                         }
@@ -124,8 +121,8 @@ public class IptvUtil {
                 }
 
                 if (originalNetworkId != 0 && displayName != null) {
-                    Channel channel =
-                            new Channel(id, displayName, displayNumber, icon,
+                    XmlTvParser.Channel channel =
+                            new XmlTvParser.Channel(id, displayName, displayNumber, icon,
                                     originalNetworkId, 0, 0, false);
                     if (channelMap.containsKey(originalNetworkId)) {
                         channels.set(channelMap.get(originalNetworkId), channel);
