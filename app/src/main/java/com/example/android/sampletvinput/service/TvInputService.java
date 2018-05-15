@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 The Android Open Source Project
+ * Copyright 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -253,12 +253,12 @@ public class TvInputService extends BaseTvInputService {
             InternalProviderData internalProviderData = programToRecord.getInternalProviderData();
             internalProviderData.setRecordingStartTime(mStartTimeMs);
             RecordedProgram recordedProgram = new RecordedProgram.Builder(programToRecord)
-                        .setInputId(mInputId)
-                        .setRecordingDataUri(
-                                programToRecord.getInternalProviderData().getVideoUrl())
-                        .setRecordingDurationMillis(currentTime - mStartTimeMs)
-                        .setInternalProviderData(internalProviderData)
-                        .build();
+                    .setInputId(mInputId)
+                    .setRecordingDataUri(
+                            programToRecord.getInternalProviderData().getVideoUrl())
+                    .setRecordingDurationMillis(currentTime - mStartTimeMs)
+                    .setInternalProviderData(internalProviderData)
+                    .build();
             notifyRecordingStopped(recordedProgram);
         }
 

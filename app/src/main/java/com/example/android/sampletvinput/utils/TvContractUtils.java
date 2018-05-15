@@ -26,9 +26,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.google.android.media.tv.companionlibrary.model.Channel;
+import com.example.android.sampletvinput.domain.Channel;
 import com.example.android.sampletvinput.domain.PlaybackInfo;
-import com.google.android.media.tv.companionlibrary.model.Program;
+import com.example.android.sampletvinput.domain.Program;
 import com.example.android.sampletvinput.xmltv.XmlTvParser;
 
 /**
@@ -52,7 +52,7 @@ public class TvContractUtils {
     private TvContractUtils() {}
 
     public static void updateChannels(
-            Context context, String inputId, List<XmlTvParser.XmlTvChannel> channels) {
+            Context context, String inputId, List<XmlTvParser.Channel> channels) {
         // Create a map from original network ID to channel row ID for existing channels.
         SparseArray<Long> mExistingChannelsMap = new SparseArray<>();
         Uri channelsUri = TvContract.buildChannelsUriForInput(inputId);
@@ -76,7 +76,7 @@ public class TvContractUtils {
         ContentValues values = new ContentValues();
         values.put(Channels.COLUMN_INPUT_ID, inputId);
         Map<Uri, String> logos = new HashMap<>();
-        for (XmlTvParser.XmlTvChannel channel : channels) {
+        for (XmlTvParser.Channel channel : channels) {
             values.put(Channels.COLUMN_DISPLAY_NUMBER, channel.displayNumber);
             values.put(Channels.COLUMN_DISPLAY_NAME, channel.displayName);
             values.put(Channels.COLUMN_ORIGINAL_NETWORK_ID, channel.originalNetworkId);
@@ -112,15 +112,15 @@ public class TvContractUtils {
         return VIDEO_HEIGHT_TO_FORMAT_MAP.get(videoHeight);
     }
 
-    public static LongSparseArray<XmlTvParser.XmlTvChannel> buildChannelMap(
-            ContentResolver resolver, String inputId, List<XmlTvParser.XmlTvChannel> channels) {
+    public static LongSparseArray<XmlTvParser.Channel> buildChannelMap(
+            ContentResolver resolver, String inputId, List<XmlTvParser.Channel> channels) {
         Uri uri = TvContract.buildChannelsUriForInput(inputId);
         String[] projection = {
                 Channels._ID,
                 Channels.COLUMN_DISPLAY_NUMBER
         };
 
-        LongSparseArray<XmlTvParser.XmlTvChannel> channelMap = new LongSparseArray<>();
+        LongSparseArray<XmlTvParser.Channel> channelMap = new LongSparseArray<>();
         Cursor cursor = null;
         try {
             cursor = resolver.query(uri, projection, null, null, null);
@@ -299,9 +299,9 @@ public class TvContractUtils {
         return ratings.toString();
     }
 
-    private static XmlTvParser.XmlTvChannel getChannelByNumber(String channelNumber,
-                                                               List<XmlTvParser.XmlTvChannel> channels) {
-        for (XmlTvParser.XmlTvChannel channel : channels) {
+    private static XmlTvParser.Channel getChannelByNumber(String channelNumber,
+                                                          List<XmlTvParser.Channel> channels) {
+        for (XmlTvParser.Channel channel : channels) {
             if (channelNumber.equals(channel.displayNumber)) {
                 return channel;
             }
