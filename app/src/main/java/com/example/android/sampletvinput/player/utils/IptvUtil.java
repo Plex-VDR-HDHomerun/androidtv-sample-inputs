@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
-import com.google.android.media.tv.companionlibrary.XmlTvParser;
+import com.example.android.sampletvinput.xmltv.XmlTvParser;
 import com.google.android.media.tv.companionlibrary.model.Channel;
 import com.google.android.media.tv.companionlibrary.model.Program;
 

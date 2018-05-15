@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/src/main/cpp
+# Install script for directory: /home/jetson/StudioProjects/androidtv-iptv-inputs/msgexchange/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Project")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,13 +29,13 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/msgexchange/cmake_install.cmake")
-  include("C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/jniwrap/cmake_install.cmake")
+  include("/home/jetson/StudioProjects/androidtv-iptv-inputs/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/msgexchange/cmake_install.cmake")
+  include("/home/jetson/StudioProjects/androidtv-iptv-inputs/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/jniwrap/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Z400/Desktop/androidtv-sample-inputs-master/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jetson/StudioProjects/androidtv-iptv-inputs/msgexchange/.externalNativeBuild/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
