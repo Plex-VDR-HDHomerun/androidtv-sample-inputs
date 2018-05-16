@@ -20,6 +20,7 @@ import java.util.zip.GZIPInputStream;
 
 import com.example.android.sampletvinput.xmltv.XmlTvParser;
 
+
 /**
  * Static helper methods for fetching the channel feed.
  */

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd `dirname $0`
-
-valgrind --leak-check=full --track-origins=yes --show-reachable=yes --track-fds=yes ./unittest $@
-

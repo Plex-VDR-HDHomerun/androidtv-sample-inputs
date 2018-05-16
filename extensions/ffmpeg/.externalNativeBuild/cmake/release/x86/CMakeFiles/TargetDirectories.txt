@@ -1,3 +1,0 @@
-C:/Users/Z400/androidtv-iptv-util/extensions/ffmpeg/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
-C:/Users/Z400/androidtv-iptv-util/extensions/ffmpeg/.externalNativeBuild/cmake/release/x86/CMakeFiles/ffmpeg.dir
-C:/Users/Z400/androidtv-iptv-util/extensions/ffmpeg/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir

@@ -94,17 +94,7 @@ public class ChannelSyncAdapter extends AbstractThreadedSyncAdapter {
                 ChannelSyncAdapter.BUNDLE_KEY_CURRENT_PROGRAM_ONLY, false);
         long startMs = System.currentTimeMillis();
         long endMs = startMs + FULL_SYNC_WINDOW_SEC * 1000;
-        if (currentProgramOnly) {
-            // This is requested from the setup activity, in this case, users don't need to wait for
-            // the full sync. Sync the current programs first and do the full sync later in the
-            // background.
-            endMs = startMs + SHORT_SYNC_WINDOW_SEC * 1000;
-        }
-        for (int i = 0; i < channelMap.size(); ++i) {
-            Uri channelUri = TvContract.buildChannelUri(channelMap.keyAt(i));
-            List<Program> programs = getPrograms(channelUri, channelMap.valueAt(i),
-                    listings.programs, startMs, endMs);
-            updatePrograms(channelUri, programs);
+
         }
     }
 
